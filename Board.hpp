@@ -11,8 +11,8 @@ unsigned int const MAXUSINT = 4294967295;
 namespace ariel {
 
     class Board {
-
     public:
+//        Board()= default;
         unsigned int minRow=MAXUSINT;
         unsigned int maxRow=0;
         unsigned int minCol=MAXUSINT;
@@ -20,12 +20,11 @@ namespace ariel {
 
         std::map<std::string,char> mapBoard;
 
-        void post(unsigned int i,unsigned int i1, ariel::Direction direction, std::string st);
+        void post(unsigned int row,unsigned int col, ariel::Direction direction, std::string st);
 
-        std::string read(unsigned i, unsigned i1, Direction direction, unsigned i2);
+        std::string read(unsigned row, unsigned col, ariel::Direction direction, unsigned length);
 
         void show();
-
 
         void maxMinRowCol(unsigned int row, unsigned int col, Direction direction, unsigned long length);
     };

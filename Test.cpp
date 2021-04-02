@@ -6,7 +6,7 @@
  * Date: 2021-03
  */
 
-#include "doctest.h"
+#include "part_a/doctest.h"
 #include "Board.hpp"
 
 

@@ -21,7 +21,6 @@ std::string ariel::Board::read(unsigned int row, unsigned int col, Direction dir
         else{
             col++;
         }
-
         if (mapBoard[locationInMap]){
             ans+= mapBoard[locationInMap];
         }
@@ -62,26 +61,26 @@ void ariel::Board::post(unsigned int row, unsigned int col, ariel::Direction dir
 void ariel::Board::show() {
 
     string board = "";
-    //need to create the route thiniking on start form min\min -> max\min
-    //                                                  min\min -> max\min
-    //                                                   also need to add a few _____
-//                                                                              __x__
-//                                                                              _____
-//
-//    unsigned long long index=0;
-//    if(maxRow>0){
-//
-//        index = maxRow
-//    }
 
-    string locationInMap = "";
-    locationInMap += ROW+to_string(minRow);
-    locationInMap += COL+to_string(minCol);
+    for (unsigned int row = minRow - 1; row <= maxRow + 1; ++row) {
+        board+=to_string(row)+":\t";
+        for (unsigned int col = minCol - 1; col <= maxCol + 1 ; ++col) {
+            string locationInMap = "";
+            locationInMap += ROW+to_string(row);
+            locationInMap += COL+to_string(col);
 
-    if (mapBoard[locationInMap]){
+            if (mapBoard[locationInMap]){
+                board+=mapBoard[locationInMap];
+            }
+            else{
+            board+="-";}
+        }
+        board+="\n";
+        }
 
 
     }
+
 
 void ariel::Board::maxMinRowCol(unsigned int row, unsigned int col, ariel::Direction direction, unsigned long length) {
 
