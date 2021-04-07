@@ -64,7 +64,7 @@ void ariel::Board::show() {
 
     string board;
 
-    for (unsigned int row = minRow - 1; row < maxRow + 1; ++row) {
+    for (unsigned int row = minRow - 1; row <= maxRow + 1; ++row) {
         board+=to_string(row)+": ";
         for (unsigned int col = minCol - 1; col <= maxCol + 1 ; ++col) {
             string locationInMap;
