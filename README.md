@@ -7,7 +7,7 @@ The department support the following functions:
 
 * `post` - receives a position (line and column), direction (horizontal or vertical), and a string representing an ad,
 And post the string on the board in the appropriate place.
-* `read '- receives a position (line and column), direction (horizontal or vertical), and a number of characters, reads what is written on the board in the nanton position and the length, and returns a string. The letter in each slot on the board is the last letter pasted there.
+* `read` - receives a position (line and column), direction (horizontal or vertical), and a number of characters, reads what is written on the board in the nanton position and the length, and returns a string. The letter in each slot on the board is the last letter pasted there.
 * `show` - Displays the current bulletin board in a convenient way to read, in any format of your choice.
 
 Examples of the operation can not be found in [Demo.cpp] (../ Demo.cpp).
