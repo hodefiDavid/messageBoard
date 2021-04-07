@@ -1,7 +1,7 @@
 
 # Two-dimensional bulletin board
 
-In the neighborhood's bulletin board, people paste an ad on top of each other, and the ads mix ([like this video](hebrew) (https://www.youtube.com/watch?v=LgIq9BppBLw)).
+In the neighborhood's bulletin board, people paste an ad on top of each other, and the ads mix ([like this video](https://www.youtube.com/watch?v=LgIq9BppBLw))(hebrew) .
 In this assignment we will write a department for managing the bulletin board.
 The department support the following functions:
 
