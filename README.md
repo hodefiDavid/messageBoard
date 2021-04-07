@@ -1,22 +1,20 @@
-<div dir="rtl" lang="he">
+<div dir = "rtl" lang = "he">
 
-# לוח מודעות דו ממדי
+# Two-dimensional bulletin board
 
-בלוח המודעות השכונתי, אנשים מדביקים מודעות אחת על השניה, והמודעות מתערבבות ([כמו בסרטון הזה](https://www.youtube.com/watch?v=LgIq9BppBLw)).
-במטלה זו נכתוב מחלקה לניהול לוח המודעות.
-המחלקה צריכה לתמוך בפונקציות הבאות:
+In the neighborhood's bulletin board, people paste an ad on top of each other, and the ads mix ([like this video] (https://www.youtube.com/watch?v=LgIq9BppBLw)).
+In this assignment we will write a department for managing the bulletin board.
+The department support the following functions:
 
-* `post` - מקבלת מיקום (שורה וטור), כיוון (אופקי או אנכי), ומחרוזת המייצגת מודעה, 
-ומדביקה את המחרוזת על הלוח במקום המתאים.
-* `read` - מקבלת מיקום (שורה וטור), כיוון (אופקי או אנכי), ומספר תוים, קוראת את מה שכתוב על הלוח במיקום הנתון ובאורך הנתון, ומחזירה מחרוזת. האות הנמצאת בכל משבצת על הלוח היא האות האחרונה שהודבקה שם.
-* `show` - מציגה את לוח-המודעות הנוכחי בצורה נוחה לקריאה, בפורמט כלשהו לפי בחירתכם.
+* `post` - receives a position (line and column), direction (horizontal or vertical), and a string representing an ad,
+And post the string on the board in the appropriate place.
+* `read '- receives a position (line and column), direction (horizontal or vertical), and a number of characters, reads what is written on the board in the nanton position and the length, and returns a string. The letter in each slot on the board is the last letter pasted there.
+* `show` - Displays the current bulletin board in a convenient way to read, in any format of your choice.
 
-דוגמאות לפעולת המחלקה ניתן למצוא ב-[Demo.cpp](../Demo.cpp).
+Examples of the operation can not be found in [Demo.cpp] (../ Demo.cpp).
 
-פרטים:
+Details:
 
-* מספרי השורות והטורים ומספר התוים הם מספרים שלמים אי-שליליים (unsigned int).
-* השורה העליונה היא 0 והטור השמאלי הוא 0.
-* בכל משבצת שלא הודבק עליה כלום, יש קו תחתי
-* גודל הלוח אינו מוגבל מראש, אבל אפשר להניח שכל המודעות יהיו מרוכזות באותו איזור -- המרחקים בין מודעה למודעה לא יהיו גדולים מאד.
-
+* The line and column numbers and character numbers are non-negative integers (unsigned int).
+* The top row is 0 and the left column is 0.
+* In each slot on which nothing is pasted, there is an underline
