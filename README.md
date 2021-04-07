@@ -1,4 +1,3 @@
-<div dir = "rtl" lang = "he">
 
 # Two-dimensional bulletin board
 
